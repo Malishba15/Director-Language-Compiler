@@ -1,0 +1,72 @@
+##TEST CASE 1
+scene x assign 5;
+#*Multi
+line 
+Comments*#
+cut(x is 10){
+show "hi baby";##cut block
+} 
+cutif (x isnt 5){
+show "Cutif block";##Cutif block
+}
+fade {
+show "Fade block";##Fade block
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+##TEST CASE 2
+scene x assign 1;
+repeat(3 times) {     
+    cut(x is less 5) {
+        show " cut inside repeat block";
+    }
+    fade {
+    show "This should not appear";
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------
+##TEST CASE 3
+scene x assign 10;
+cut(x is greater or equal 5){
+    cut(x is 10){
+        show "inner cut"; ##this should run
+    }
+    fade{
+        show "inner fade";
+    }
+    show "outer cut"; ##this should run
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+##TEST CASE 4
+scene age assign 20;              ## Integer variable
+frame rating assign 4.5;          ## Floating-point variable
+script actorName assign "Amna";   ## String variable
+show age;
+show rating;
+#*
+Multi-line comment: 
+This section tests arithmetic operations 
+*# 
+scene totalScenes assign 6 amplify 3;
+frame duration assign 120.5 join 2;
+scene remainder assign 10 splice 3;
+show totalScenes;
+show duration;
+show remainder;
+## Conditional Statements
+cut (age is greater 18) {
+    show "Adult detected";
+} cutif (age is 18) {
+    show "Exactly 18 years old";
+} fade {
+    show "Underage detected";
+}
+## Loop Examples
+repeat (5 times) {
+    show "Growing up!";
+}
+script msg assign "msg";
+## Input/Output Examples
+prompt msg;
+show actorName;

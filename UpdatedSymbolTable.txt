@@ -1,0 +1,23 @@
+Name                Type           Size      LineOfDecl                    Line of Usage                                     
+--------------------------------------------------------------------------------------
+repeat              KEYWORD        0         1                             -----                                             
+(                   PUNCTUATOR     0         1                             -----                                             
+3                   INTEGER        4         1                             -----                                             
+times               KEYWORD        0         1                             -----                                             
+)                   PUNCTUATOR     0         1                             -----                                             
+{                   PUNCTUATOR     0         1                             -----                                             
+show                KEYWORD        0         2                             -----                                             
+"Outer Repeat"      LITERAL        100       2                             -----                                             
+;                   PUNCTUATOR     0         2                             -----                                             
+repeat              KEYWORD        0         3                             -----                                             
+(                   PUNCTUATOR     0         3                             -----                                             
+5                   INTEGER        4         3                             -----                                             
+times               KEYWORD        0         3                             -----                                             
+)                   PUNCTUATOR     0         3                             -----                                             
+{                   PUNCTUATOR     0         3                             -----                                             
+show                KEYWORD        0         4                             -----                                             
+"Inner Repeat"      LITERAL        100       4                             -----                                             
+;                   PUNCTUATOR     0         4                             -----                                             
+}                   PUNCTUATOR     0         5                             -----                                             
+}                   PUNCTUATOR     0         6                             -----                                             
+                                                                           -----                                             

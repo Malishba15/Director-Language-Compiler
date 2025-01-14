@@ -1,0 +1,26 @@
+README - How to Run the Code
+
+Steps to Run the Code
+Load the .cpp file:
+1. Open the provided .cpp file in a C++ development environment or compiler 
+
+Prepare the Input File:
+1. At the same location as the .cpp file, create a file named input.txt.
+2. Write your input program in input.txt following the syntax and rules of the custom language, as outlined in the attached documentation.
+3. Adding meaningful test cases to thoroughly validate different aspects of the compiler (e.g., declarations, loops, conditions, arithmetic operations).
+
+Run the Compiler:
+1. Execute the .cpp file in your development environment. The compilation process will begin.
+
+Output Files:
+1. During the lexical analysis phase, two files will be generated: 
+output.txt: Contains the tokens identified from the input program.
+symbolTable.txt: Contains a symbol table with details like identifiers, their types, sizes, and scope.
+If the input program contains syntax errors, they will be logged in error.txt during the syntax analysis phase.
+
+Syntax Analysis:
+1. If the syntax is correct, the symbolTable.txt file will be updated with additional information, such as line numbers where identifiers are used.
+2. If syntax errors are detected, the compilation stops, and the errors can be reviewed in error.txt.
+Semantic Analysis and Execution:
+3. If the syntax is correct, the semantic analysis phase is initiated. It verifies type compatibility, scope rules, and proper usage of identifiers.
+4. Upon successful semantic analysis, the program executes, and the output is displayed on the screen.

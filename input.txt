@@ -1,0 +1,7 @@
+repeat(3 times) {
+     show "Outer Repeat";
+   repeat(5 times){
+       show "Inner Repeat";
+   }
+}
+## NESTED repeat is also working

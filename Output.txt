@@ -1,0 +1,28 @@
+Tokens:
+repeat
+(
+3
+times
+)
+{
+EOL
+show
+"Outer Repeat"
+;
+EOL
+repeat
+(
+5
+times
+)
+{
+EOL
+show
+"Inner Repeat"
+;
+EOL
+}
+EOL
+}
+EOL
+EOL
