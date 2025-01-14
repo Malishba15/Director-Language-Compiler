@@ -17,7 +17,7 @@ Comments are used to explain the code. Director supports both single-line and mu
 •	Single-line comment: Begins with ## 
 •	Multi-line comment: Enclosed between #* and *# 
 Example:
-## This is a single-line comment
+##This is a single-line comment
 
 #*
   This is a multi-line comment.
@@ -39,13 +39,13 @@ cut and cutif
 •	cutif: Executes when the cut condition is false, but its condition is true.
 Syntax:
 cut (condition) {
-    ## Code for true condition
+    ##Code for true condition
 }  
 cutif (other_condition) {
-    ## Code for alternate condition
+    ##Code for alternate condition
 }
 fade {
-    ## For prompt and show statements only
+    ##For prompt and show statements only
 }
 
 Example:
@@ -67,7 +67,7 @@ roll
 Executes a block for a specified number of iterations.
 Syntax:
 roll (scene i assign 0; i is less 10; i assign i + 1) {
-    ## Code to execute in each iteration
+    ##Code to execute in each iteration
 }
 ##Check added that in roll loop only one variable should be used
 
@@ -75,7 +75,7 @@ repeat
 Continues executing as long as the condition is true.
 Syntax:
 repeat (condition) {
-    ## Code to execute while the condition is true
+    ##Code to execute while the condition is true
 }
 
 8. Operators
